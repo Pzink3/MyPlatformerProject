@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="9" tilewidth="70" tileheight="70" backgroundcolor="#90ffff">
+ <tileset firstgid="1" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../../MyPlatformer/MyPlatformerGame/public_html/data/img/background-tiles.png" width="910" height="910"/>
+ </tileset>
+ <tileset firstgid="170" name="Minecraft Tileset" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Tileset.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="366" name="Minecraft Stone Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Stone Tile.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="375" name="Minecraft Grass Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Grass Tile.png" width="285" height="285"/>
+ </tileset>
+ <tileset firstgid="391" name="Minecraft Iron Door" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Iron Door.png" width="620" height="620"/>
+ </tileset>
+ <tileset firstgid="455" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/meta-tiles.png" width="350" height="70"/>
+  <tile id="4">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="460" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/meta-tiles.png" width="350" height="70"/>
+ </tileset>
+ <layer name="background" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQxFYUajfEkpXMVKGATZ3CCQ=
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="9" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxmcZqQMAwCzvwzB
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B8AAACQAAB
+  </data>
+ </layer>
+ <objectgroup name="trigger-entities" width="16" height="9">
+  <object name="levelTrigger" x="980" y="420" width="70" height="140">
+   <properties>
+    <property name="level" value="level02"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

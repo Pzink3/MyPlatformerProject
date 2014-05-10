@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="9" tilewidth="70" tileheight="70" backgroundcolor="#00033a">
+ <tileset firstgid="1" name="Minecraft Stone Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Stone Tile.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="10" name="Minecraft Dirt Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Dirt Tile.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="19" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/meta-tiles.png" width="350" height="70"/>
+ </tileset>
+ <layer name="background" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxkwUogBBGAAEQ==
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="9" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxmIU4gBMyABcQ==
+  </data>
+ </layer>
+</map>
