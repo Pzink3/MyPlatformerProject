@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="9" tilewidth="70" tileheight="70">
+ <tileset firstgid="1" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/background-tiles.png" width="910" height="910"/>
+ </tileset>
+ <tileset firstgid="170" name="Minecraft Stone Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Stone Tile.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="179" name="Minecraft Dirt Tile" tilewidth="70" tileheight="70">
+  <image source="../../../../public_html/data/img/Minecraft Dirt Tile.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="188" name="Minecraft Lava" tilewidth="70" tileheight="70">
+  <image source="../img/Minecraft Lava.gif" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="189" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../img/meta-tiles.png" width="350" height="70"/>
+ </tileset>
+ <tileset firstgid="194" name="Minecraft Oak Tile" tilewidth="70" tileheight="70">
+  <image source="../img/Minecraft Oak Tile.png" width="191" height="195"/>
+ </tileset>
+ <layer name="background1" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxby8DAsHYUD1lMCMDUrYJidLCHQgwAMqlaHw==
+  </data>
+ </layer>
+ <layer name="foreground1" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQxlsJYAJqacUAABYhQh9
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="9" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAYHaaj3IAFMSD2lAACvsAqP
+  </data>
+ </layer>
+ <layer name="foreground2" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF1AJHkPBA6McGtuBgUwsAADyMBgE=
+  </data>
+ </layer>
+ <layer name="background2" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAZHCfBJ0UuqGXtwsKkFALCeBI0=
+  </data>
+ </layer>
+</map>

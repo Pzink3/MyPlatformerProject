@@ -25,26 +25,33 @@
  </tileset>
  <tileset firstgid="460" name="meta-tiles" tilewidth="70" tileheight="70">
   <image source="../../../../public_html/data/img/meta-tiles.png" width="350" height="70"/>
+  <tile id="1">
+   <properties>
+    <property name="type" value="lslope"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="background" width="16" height="9">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFQxFYUajfEkpXMVKGATZ3CCQ=
+   eJxjYBgFgxV4ALEdEHthkbMiUi8Mo5thCaWrGCnDADTuCkA=
   </data>
  </layer>
  <layer name="collision" width="16" height="9" opacity="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIxmcZqQMAwCzvwzB
-  </data>
- </layer>
- <layer name="Tile Layer 3" width="16" height="9">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B8AAACQAAB
+   eJxjYBgFgxWcYGRgOA3E5xnJ13uagBkXGInHp9EwSAwAuxgTXw==
   </data>
  </layer>
  <objectgroup name="trigger-entities" width="16" height="9">
   <object name="levelTrigger" x="980" y="420" width="70" height="140">
    <properties>
     <property name="level" value="level02"/>
+    <property name="xSpawn" value="600"/>
+    <property name="ySpawn" value="200"/>
    </properties>
   </object>
  </objectgroup>
