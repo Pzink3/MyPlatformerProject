@@ -5,6 +5,9 @@ game.PlayerEntity = me.ObjectEntity.extend({
         settings.spritewidth = "72";
         settings.spriteheight = "97";
         this.parent(x, y, settings);
+        
+        this.collidable = true;
+        
         this.renderable.addAnimation("idle", [3]);
         this.renderable.setCurrentAnimation("idle");
         this.setVelocity(5, 20);
@@ -17,8 +20,25 @@ game.PlayerEntity = me.ObjectEntity.extend({
     else {
         this.vel.x = 0;
     }
+    var collision = this.collide();
     this.updateMovement();
     return true;
     
     }
+});
+
+
+
+game.LevelTrigger = me.ObjectEntity.extend ({
+init: function(x, y, settings) {
+    this.parent(x, y, settings);
+    this.collidable = true;
+    this.level = settings.level;
+  
+},
+    onCollision: function () {
+        this.collidable = false;
+        me.levelDirector.loadLevel(this.level);
+    }
+    
 });
