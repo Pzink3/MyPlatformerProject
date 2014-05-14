@@ -42,8 +42,8 @@ var game = {
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
                 
-                me.entityPool.add("player", game.PlayerEntity);
-                me.entityPool.add("levelTrigger", game.LevelTrigger);
+                me.pool.register("player", game.PlayerEntity, true);
+                me.pool.register("levelTrigger", game.LevelTrigger, true);
                 me.input.bindKey(me.input.KEY.RIGHT, "right");
             
             // Start the game.
