@@ -19,7 +19,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
     },
         
-        update: function () {
+        update: function (deltaTime) {
         if(me.input.isKeyPressed("right")) {
             this.vel.x += this.accel.x * me.timer.tick;
         }
@@ -29,7 +29,12 @@ game.PlayerEntity = me.ObjectEntity.extend({
     else {
         this.vel.x = 0;
     }
-   
+   //if (check whether the velocity of X is NOT zero)
+   // if(check if the animation is NOT run)
+   //   setCurrentAnimation("run");
+   //   this.renderable.setAnimationFrame();
+   //else
+   //   set the animation back to idle;
     if (me.input.isKeyPressed('jump')) {
             if (!this.jumping && !this.falling) {
                 this.vel.y = -this.maxVel.y * me.timer.tick;

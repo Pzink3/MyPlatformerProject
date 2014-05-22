@@ -52,5 +52,7 @@ var game = {
             
             // Start the game.
 		me.state.change(me.state.MENU);
+            
+               
 	}
 };
