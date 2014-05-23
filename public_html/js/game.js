@@ -50,6 +50,7 @@ var game = {
                 me.input.bindKey(me.input.KEY.D, "right");
                 me.input.bindKey(me.input.KEY.A, "left");
                 me.input.bindKey(me.input.KEY.W, "jump");
+                me.input.bindKey(me.input.KEY.SPACE, "jump");
                 // bind the key for jumps.
            
             
